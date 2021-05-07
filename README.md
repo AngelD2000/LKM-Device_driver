@@ -47,6 +47,6 @@ The device file, by way of its major and minor numbers, indicates to the kernel 
 
 ## Things I learned: 
 1. Strings in C is weird: For all the '\n' that gets added on by fgets, need to change that to '\0' in order to have the full representation of strings in C. Which ends in '\0'. 
-2. Apparently atoi when fail returns 0 but atoi of a character "0" also returns 0. So there's no way to tell if it's an error versus just 0. 
+2. atoi when fail returns 0 but atoi of a character "0" also returns 0. So there's no way to tell if it's an error versus just 0. 
 3. Bound checking is extremely important: The functions themselves are not built to check for bounds so as programmers we must implement bound checking. We have to make sure we don't read over the buffer, write over the buffer, seek over the buffer and seek past the start of the buffer. 
 4. Write and Read functions cannot return 0 because functions that are asynchronous will just think it reads 0 bytes everytime and that will just have the programming in a loop because it will keep requesting for the data. 
