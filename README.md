@@ -1,4 +1,4 @@
-# Device Driver 
+# Character Device Driver 
 In this assignment we will explore Loadable Kernel Modules, file I/O, and how to implement a basic device driver.
 This assignment consists of three parts.  First, you will compile, install, and run a simple Loadable Kernel Module (LKM).  Second, you will write a user-space program that takes commands from the user to read, write and seek on a file.  You will use this program to test the functionality of a custom device driver that you'll create in Part C.  Finally, you will write your own LKM that implements the device driver.
 
